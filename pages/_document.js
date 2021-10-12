@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import Link from "next/link";
 import { Container } from "../components/container/Container";
 import Navbar from "../components/navbar/Navbar";
+const prefix = "/cv";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -37,7 +38,7 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
-          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="manifest" href={prefix + "/site.webmanifest"} />
         </Head>
         <body className="ml-6 mr-6 sm:ml-12 sm:mr-12">
           <Main />
