@@ -23,6 +23,8 @@ const {
 } = data;
 const { tags } = Heading;
 
+const prefix = "/cv";
+
 export default function Home() {
   return (
     <div className="mx-auto lg:max-w-screen-xl">
@@ -42,7 +44,7 @@ export default function Home() {
                 <div className="flex justify-center">
                   <div className="overflow-hidden mb-2 border-8 border-white border-solid h-52 w-52 rounded-full shadow-xl">
                     <img
-                      src={personalInfo.profilePic}
+                      src={prefix + personalInfo.profilePic}
                       alt="Mabo Mbebeta"
                       height="200"
                       width="200"
