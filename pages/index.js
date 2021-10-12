@@ -23,7 +23,7 @@ const {
 } = data;
 const { tags } = Heading;
 
-const prefix = "/cv";
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Home() {
   return (

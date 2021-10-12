@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import Link from "next/link";
 import { Container } from "../components/container/Container";
 import Navbar from "../components/navbar/Navbar";
-const prefix = "/cv";
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
