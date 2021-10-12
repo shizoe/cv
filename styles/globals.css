@@ -1,52 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@layer base {
-  body {
-    @apply text-gray-700;
-  }
-
-  h1 {
-    @apply text-5xl;
-  }
-
-  p {
-    @apply mb-4;
-  }
-
-  h2,
-  li,
-  p {
-    @apply pl-2;
-  }
-
-  p {
-    @apply leading-7;
-  }
-
-  li:hover svg.timeline-circle {
-    @apply border-2;
-  }
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: lightgray;
-    border-radius: 10px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: gray;
-  }
-}
+@import "/base"
