@@ -65,7 +65,10 @@ export default function Home() {
                 </Heading>
 
                 <div className="flex justify-around">
-                  <ButtonLink href="cv/mabo-mbebeta-cv.pdf" target="_blank">
+                  <ButtonLink
+                    href={prefix + "cv/mabo-mbebeta-cv.pdf"}
+                    target="_blank"
+                  >
                     Download CV
                     <Download alt="PDF" className="inline h-5 w-5 ml-2" />
                   </ButtonLink>
